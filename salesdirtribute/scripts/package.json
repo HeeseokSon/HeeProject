@@ -1,0 +1,23 @@
+{
+  "name": "synco-batch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SYNCO batch jobs",
+  "main": "app.js",
+  "scripts": {
+    "dist": "node ./distribute.js"
+  },
+  "author": "Seongjae Hwang",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "csvtojson": "^2.0.6",
+    "dotenv": "^6.0.0",
+    "ethereumjs-tx": "^1.3.6",
+    "iconv": "^2.3.2",
+    "readline-sync": "^1.4.9",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
