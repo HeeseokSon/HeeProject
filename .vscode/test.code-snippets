@@ -76,5 +76,13 @@
 			"});"
 		],
 		"description": "Add Teardown"
+	},
+	"TDD assert Equal": {
+		"scope": "javascript,typescript",
+		"prefix": "tdd.addequal",
+		"body": [
+			"assert.equal('$1', '$2', '$0');"
+		],
+		"description": "Add Equals"
 	}
 }
