@@ -1,0 +1,80 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Print to console": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	} ,
+	"Test Framework nodejs code": {
+		"scope": "javascript,typescript",
+		"prefix": "tdd.init",
+		"body": [
+			"'use strict';",
+			"",
+			"const assert = require('assert');",
+			"",
+			"suite('$1', function(){",
+			"	suite('$2', function(){",
+			"		setup(function(){",	
+			"		});",
+			"		teardown(function(){",
+			"		});",
+			"		test('$3', function(){",
+			"		$0",
+			"		});",
+			"	});",
+			"});"
+		],
+		"description": "Testframework"
+	},
+	"TDD create Suite": {
+		"scope": "javascript,typescript",
+		"prefix": "tdd.addsuite",
+		"body": [
+			"suite('$1', function(){",
+			"	$0",
+			"});"
+		],
+		"description": "Add Suite"
+	},
+	"TDD create Test": {
+		"scope": "javascript,typescript",
+		"prefix": "tdd.addtest",
+		"body": [
+			"test('$1', function(){",
+			"	$0",
+			"});"
+		],
+		"description": "Add Test"
+	},
+	"TDD create Setup": {
+		"scope": "javascript,typescript",
+		"prefix": "tdd.addsetup",
+		"body": [
+			"setup('$1', function(){",
+			"	$0",
+			"});"
+		],
+		"description": "Add Setup"
+	},
+	"TDD create Teardown": {
+		"scope": "javascript,typescript",
+		"prefix": "tdd.addteardown",
+		"body": [
+			"teardown('$1', function(){",
+			"	$0",
+			"});"
+		],
+		"description": "Add Teardown"
+	}
+}
