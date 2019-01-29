@@ -16,6 +16,12 @@ suite('Web3', function(){
         });
         test('BN test', function(){
             assert.equal( '1', '2', '3');
+
+
+
+
+
+            
         });
     });
 });
